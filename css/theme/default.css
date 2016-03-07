@@ -36,3 +36,8 @@
 .reveal .slides .fuse-landscape {
     height: 350px;
 }
+
+.reveal #techcrunch{
+    margin-left: auto;
+    margin-right: auto;
+}
