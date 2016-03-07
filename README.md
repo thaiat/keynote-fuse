@@ -5,5 +5,5 @@
 Additional links.
 
  - [Fuse](http://www.fusetools.com)
- - [Dowload Fuse](https://www.fusetools.com/downloads)
+ - [Download Fuse](https://www.fusetools.com/downloads)
  - [Forum](https://www.fusetools.com/community)
