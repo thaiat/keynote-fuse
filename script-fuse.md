@@ -1,18 +1,20 @@
-Fuse : unite developers and programmers so that they can actually work together by enabling a real time workflow
+slide 3:
+Hello everyone, let me just quickly introduce Yoobic.
+Yoobic is a mobile collaboration plateform for brands and retailers. It's  main  goal is to improve field efficiency and in store execution. 
 
-UX Markup : built specifically by fuse for mobile app UI
-	Used to describe 
-	- UI elements and layout
-	- animation and motion
-	- gesture interpretation and response
-	- Navigation
+For instance, a brand like Coca Cola can publish a mission in order to check that their products are correctly installed in a physical store. By doing so, they can get immediate feedback from the store manager.
 
-JavaScript is used for business logic 
-	- in order to get cross plateform app logic 
-	- commonJs module system (possibility to use require...)
-	- supports most js libraries
-	- observables about which we will talk later
-	- functionnal reactive data binding system
+
+The technoogy we used  so far to build the mobile app is ionic.
+
+
+
+slide 4:
+
+We are very proud that we made it to the finals of this years techcrunch startup battlefield in London. And just to let you know, if you're looking for neew challenges and would like to use cutting edge technology, We're recruiting !
+
+
+
 
 
 
