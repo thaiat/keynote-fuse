@@ -181,6 +181,69 @@
                 </div>
             </section>
 
+            <section id="ux-markup">
+                <div class="col-xs-12">
+                    <h4> UX Markup</h4>
+                </div>
+
+                <div class="col-xs-12">
+                    <pre><code>
+&lt;Panel ux:Class="image"&gt;
+    &lt;Image Width="15" Height="15" File="Assets/raindrops.png"&gt;
+        &lt;Rotation Degrees="20.6" /&gt;
+    &lt;/Image&gt;
+&lt;/Panel&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+            <section id="ngux-markup">
+                <div class="col-xs-12">
+                    <h4> NGUX Markup</h4>
+                </div>
+
+                <div class="col-xs-12">
+                    <pre><code>
+&lt;Panel ux:Class="image"&gt;
+    &lt;Image Width="{{width}}" Height="15" File="{{image.fileName}}"&gt;
+        &lt;Rotation Degrees="20.6" /&gt;
+    &lt;/Image&gt;
+        &lt;router-outlet&gt;
+            &lt;ng:image-details
+                *ngIf="image.isActive" [ng:name="image.name"]&gt;
+            &lt;/ng:image-details&gt;
+        &lt;/router-outlet&gt;
+&lt;/Panel&gt;
+                    </code></pre>
+                </div>
+            </section>
+
+
+            <section id="angular-component">
+                <div class="col-xs-12">
+                    <h4> Angular Component</h4>
+                </div>
+
+                <div class="col-xs-12">
+                    <pre><code>
+import { Component,
+        ChangeDetectionStrategy,
+        ChangeDetectorRef
+} from '@angular/core';
+
+@Component({
+    selector: 'weather-app',
+    template: require('./app.component.ngux'),
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+
+export class AppComponent {}
+                    </code></pre>
+                </div>
+            </section>
+
+
+
             <section>
                 <h2>That's it !!!</h2>
                 <div class='row slide-content'>
