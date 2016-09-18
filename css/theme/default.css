@@ -50,6 +50,14 @@
     background-repeat: no-repeat;
 }
 
+.sponsor body {
+    background: url("../../img/sponsor.jpg");
+    background-position: center;
+    background-height: 70%;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
 .reveal .transparent-quote{
     background-color: transparent;
 }
