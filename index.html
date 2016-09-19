@@ -32,7 +32,7 @@
             <a href="http://yoobic.com" style="position:relative; top:35px; left:28px">
                 <img class="ts no-border" src="img/yoobic.svg" /><small style="position:relative;top:-35px; left:-18px;color:white;letter-spacing:0.4em">YOOBIC</small><small style="font-size:0.3em;position:relative;top:-10px; left:-150px;color:white">Collective intelligence</small>
             </a>
-    <!--         <a href="https://www.fusetools.com/" style="position:relative; left:-100px;">
+            <!--         <a href="https://www.fusetools.com/" style="position:relative; left:-100px;">
                 <img id="fuse-logo" class="fuse no-border" src="img/fuse-logo.png" />
             </a> -->
         </div>
@@ -158,22 +158,24 @@
                     <h4>FUSE JS</h4>
                 </div>
                 <pre><code style="max-height:100%">
-<JavaScript>
-    var Observable = require('FuseJS/Observable');
-    var buttonText = Observable('Button');
-    var clickCount = 0;
+var Observable = require('FuseJS/Observable');
+var buttonText = Observable('Button');
+var clickCount = 0;
 
-    function onClick() {
-        clickCount += 1;
-        buttonText.value = 'Clicks: ' + clickCount;
-    }
+function onClick() {
+    clickCount += 1;
+    buttonText.value = 'Clicks: ' + clickCount;
+}
 
-    module.exports = {
-        buttonText: buttonText,
-        onClick: onClick
-    }
-</JavaScript>
+module.exports = {
+    buttonText: buttonText,
+    onClick: onClick
+}
         </code></pre>
+            </section>
+            <section id="fuse-architecture2" data-background="#000000">
+                <h2>Fuse architecture</h2>
+                <img src="img/fuse-architecture2.PNG" class="no-border">
             </section>
             <section id="angular-component">
                 <div class="col-xs-12">
@@ -215,10 +217,6 @@ export class MyButtonComponent {
 &lt;/Panel&gt;
                     </code></pre>
                 </div>
-            </section>
-            <section id="fuse-architecture2" data-background="#000000">
-                <h2>Fuse architecture</h2>
-                <img src="img/fuse-architecture2.PNG" class="no-border">
             </section>
             <section id="angular rendering" data-background="#000000">
                 <h2>Rendering in Angular 2 </h2>

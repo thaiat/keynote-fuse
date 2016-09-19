@@ -142,8 +142,7 @@ ngux
                 </Panel>
             </Panel>
             <Panel>
-                <ng:sun *ngIf="content.TOD !== 'Night'" Width="25%" Alignment="TopLeft" Offset="-25,-30" />
-                <ng:moon *ngIf="content.TOD === 'Night'" Width="22%" Alignment="TopLeft" Offset="-25,-30" />
+                <ng:tod [ng:name]="content.TOD" Width="25%" Alignment="TopLeft" Offset="-25,-30" />
             </Panel>
             <EnteringAnimation>
                 <Move Y="-0.5" RelativeTo="ParentSize" />
@@ -172,7 +171,6 @@ ngux
         </EnteringAnimation>
     </Page>
 </Panel>
-
 ```
 
 ```ts
@@ -189,5 +187,34 @@ export class TabComponent {
 
 ```
 
+## What to do
+
+### Create service
+Weather
+
+### Create tod component
+* generator
+* bootstrap
+* ngux 
+```html
+<Panel ng:Selector="tod">
+    <Image *ngIf="name==='Night'" File="../../../../resources/moon.png" />
+    <Image *ngIf="name!=='Night'" File="../../../../resources/sun.png" />
+</Panel>
+
+```
+* typescript
+```ts
+import { Component, ChangeDetectionStrategy , Input} from '@angular/core';
+
+@Component({
+    selector: 'tod',
+    template: require('./tod.component.ngux'),
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class TodComponent {
+    @Input() name: String;
+}
+```
 
 
